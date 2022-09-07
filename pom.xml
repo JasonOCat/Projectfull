@@ -14,7 +14,7 @@
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>18</java.version>
+        <java.version>11</java.version>
         <app.image.name>springboot-react-fullstack</app.image.name>
         <app.image.tag/>
     </properties>
@@ -76,7 +76,7 @@
                 <version>0.9.11</version>
                 <configuration>
                     <from>
-                        <image>openjdk:18</image>
+                        <image>openjdk:11</image>
                     </from>
                     <container>
                         <ports>
@@ -103,7 +103,7 @@
                         <version>0.9.11</version>
                         <configuration>
                             <from>
-                                <image>openjdk:18</image>
+                                <image>openjdk:11</image>
                             </from>
                             <container>
                                 <ports>
@@ -157,7 +157,7 @@
                         <version>0.9.11</version>
                         <configuration>
                             <from>
-                                <image>openjdk:18</image>
+                                <image>openjdk:11</image>
                             </from>
                             <container>
                                 <ports>
