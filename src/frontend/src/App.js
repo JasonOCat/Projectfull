@@ -11,7 +11,7 @@ import {
 } from '@ant-design/icons';
 import StudentDrawerForm from "./StudentDrawerForm";
 import ActionButtons from "./ActionButtons";
-import {Avatar, Badge, Breadcrumb, Button, Empty, Layout, Spin, Table, Tag, Menu} from 'antd';
+import {Avatar, Badge, Breadcrumb, Button, Empty, Layout, Spin, Table, Tag, Menu, Divider} from 'antd';
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import {errorNotification} from "./Notification";
@@ -210,6 +210,13 @@ function App() {
                 />*/}
 
             </Footer>
+            <Divider>
+                <a
+                    target="_blank"
+                    href="www.google.com">
+                    Google link
+                </a>
+            </Divider>
         </Layout>
     </Layout>
 }
