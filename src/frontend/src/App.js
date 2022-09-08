@@ -212,8 +212,9 @@ function App() {
             </Footer>
             <Divider>
                 <a
+                    rel="noopener noreferrer"
                     target="_blank"
-                    href="www.google.com">
+                    href="https://www.google.com">
                     Google link
                 </a>
             </Divider>
