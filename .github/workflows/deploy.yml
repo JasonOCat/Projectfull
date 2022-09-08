@@ -17,7 +17,7 @@ env:
   # DockerHub
   DOCKER_HUB_USERNAME: jsoon
   # AWS & Elastic Bean Stalk
-  AWS_REGION: eu-west-1
+  AWS_REGION: eu-west-3
   EB_ENVIRONMENT_NAME: Springbootreactfullstack-env
   EB_APPLICATION_NAME: springboot-react-fullstack
   EB_DEPLOYMENT_PACKAGE: elasticbeanstalk/docker-compose.yml
@@ -109,7 +109,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          text: ':tada: :arrow_right: http://springbootreactfullstack-env.eba-3imjbkem.eu-west-1.elasticbeanstalk.com'
+          text: ':tada: :arrow_right: http://springbootreactfullstack-env.eba-fpnamwhk.eu-west-3.elasticbeanstalk.com/'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
