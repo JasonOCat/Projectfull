@@ -71,7 +71,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          text: ':white_check_mark: pushed jsoon/springboot-react-fullstack:${{steps.build-number.outputs.BUILD_NUMBER}} to docker hub... https://hub.docker.com/repository/docker/jsoon/springboot-react-fullstack'
+          text: ':whale: pushed jsoon/springboot-react-fullstack:${{steps.build-number.outputs.BUILD_NUMBER}} to docker hub... https://hub.docker.com/repository/docker/jsoon/springboot-react-fullstack'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Update and commit app version in docker-compose.yaml
