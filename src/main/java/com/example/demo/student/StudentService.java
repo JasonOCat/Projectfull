@@ -19,7 +19,8 @@ public class StudentService {
 
     public void addStudent(final Student student) {
         //check if email is taken
-        if (studentRepository.selectExistsEmail(student.getEmail())) {
+        Boolean existsEmail = studentRepository.selectExistsEmail(student.getEmail());
+        if (existsEmail) {
             throw new BadRequestException(String.format("Email %s is already taken", student.getEmail()));
         }
         studentRepository.save(student);
